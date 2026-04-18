@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header, nav, footer {
+  text-align: center;
+  margin: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.perfil {
+  text-align: center;
+}
+
+.perfil img {
+  border-radius: 50%;
+}
