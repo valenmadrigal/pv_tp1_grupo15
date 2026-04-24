@@ -5,7 +5,7 @@
   --color-fondo: #f4f6f8;
   --color-blanco: #ffffff;
 }
-
+ 
 /* GENERAL */
 body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -108,4 +108,65 @@ ul li {
 
 ul li:last-child {
   border-bottom: none;
+}
+
+/* ========================= */
+/* ESTILOS SOLO PROYECTOS */
+/* ========================= */
+
+.pagina-proyectos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.pagina-proyectos aside {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 10px;
+}
+
+.pagina-proyectos section {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.pagina-proyectos section h2 {
+    text-align: center;
+    width: 100%;
+}
+
+.pagina-proyectos article {
+    background-color: var(--color-blanco);
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+}
+
+.pagina-proyectos img {
+    max-width: 100%;
+}
+
+.pagina-proyectos a {
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+.pagina-proyectos a:hover {
+    color: red;
+}
+
+.pagina-proyectos a:active {
+    color: green;
+}
+
+.pagina-proyectos select:focus {
+    border: 2px solid var(--color-secundario);
 }
