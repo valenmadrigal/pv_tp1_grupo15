@@ -170,3 +170,79 @@ ul li:last-child {
 .pagina-proyectos select:focus {
     border: 2px solid var(--color-secundario);
 }
+  
+/* Contenedor principal */
+
+
+/* TARJETA PERFIL */
+.perfil {
+    background: white;
+    width: 320px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+/* Hover */
+.perfil:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagen */
+.perfil img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e67e22;
+    margin-bottom: 15px;
+}
+
+/* Nombre */
+.perfil h2 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+/* Rol */
+.perfil .rol {
+    color: #e67e22;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Texto */
+.perfil p {
+    margin: 5px 0;
+}
+
+/* Lista */
+.perfil ul {
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
+}
+
+.perfil ul li {
+    background: #f4f7f6;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 8px;
+}
+ footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+}
+/* Contenedor de todos los perfiles */
+.perfil-contenedor{
+  justify-content: center;
+  display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
