@@ -26,6 +26,9 @@
       color: var(--color-acento);
       margin-bottom: 0.5rem;
     }
+    
+    
+    
   </style>
 </head>
 <body>
@@ -50,69 +53,192 @@
       <p><strong>Autores:</strong> Lorena Araceli Suruguay, Lucia Valentina Madrigal, Camila Araceli Romero, Yesica Arias, Jesús Cabrera Garcia</p>
     </section>
 
-    <article class="descripcion">
-      <h3>Descripción</h3>
-      <p>
-        Este proyecto tiene como objetivo desarrollar una herramienta digital que permita
-        a los docentes hacer un seguimiento del proceso de aprendizaje de cada alumno.
-        El sistema genera informes automáticos que facilitan la toma de decisiones pedagógicas.
-      </p>
-      <p>
-        En una segunda etapa se incorporará un módulo de sugerencias para los alumnos,
-        recomendando recursos según las áreas donde presenten mayores dificultades.
-      </p>
-    </article>
+    <article>
+  <h3>Descripción</h3>
+  <p>
+    Este proyecto tiene como objetivo principal desarrollar una herramienta digital innovadora
+    que permita a los docentes realizar un seguimiento detallado y continuo del proceso de aprendizaje
+    de cada alumno. A través de esta plataforma, se podrán registrar avances, detectar dificultades
+    y analizar el rendimiento académico de manera personalizada.
+  </p>
+  <p>
+    El sistema está diseñado para generar informes automáticos claros y precisos, facilitando la toma
+    de decisiones pedagógicas basadas en datos concretos. Esto permitirá a los docentes adaptar sus
+    estrategias de enseñanza y mejorar la calidad educativa.
+  </p>
+  <p>
+    En una segunda etapa, se incorporará un módulo inteligente de sugerencias para los alumnos,
+    el cual recomendará recursos educativos personalizados según las áreas en las que presenten
+    mayores dificultades, promoviendo así un aprendizaje autónomo y eficaz.
+  </p>
+</article>
 
-    <section>
-      <h3>Recursos</h3>
-      <ul>
-        <li><a href="#">Informe inicial (PDF)</a></li>
-        <li><a href="#">Documentación técnica (Google Drive)</a></li>
-        <li><a href="#">Repositorio del código (GitHub)</a></li>
-      </ul>
-    </section>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
 
-    <section>
-      <h3>Equipo de Trabajo</h3>
-      <table border="1">
-        <thead>
-          <tr>
-            <th>Nombre</th>
-            <th>Rol</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Lorena Araceli Suruguay</td>
-            <td>Líder de Proyecto</td>
-          </tr>
-          <tr>
-            <td>Camila Araceli Romero</td>
-            <td>Desarrollador Backend</td>
-          </tr>
-          <tr>
-            <td>Lucia Valentina Madrigal</td>
-            <td>Diseñadora Frontend</td>
-          </tr>
-          <tr>
-            <td>Yesica Arias</td>
-            <td>Analista de Requisitos</td>
-          </tr>
-          <tr>
-            <td>Jesús Cabrera Garcia</td>
-            <td>Tester</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+    main {
+      width: 80%;
+      margin: 20px auto;
+      padding: 20px;
+    }
 
-    <p><a href="proyectos.html">← Volver al listado</a></p>
+   
+    .card {
+      background: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
 
-  </main>
+  
+    h3 {
+      color: #2c3e50;
+      border-left: 6px solid #3498db;
+      padding-left: 10px;
+    }
 
-  <footer>
-    <p>Gestión de Proyectos Educativos &copy; 2025</p>
-  </footer>
+   
+    .recursos {
+      list-style: none;
+      padding: 0;
+    }
+
+    .recursos li {
+      background: #ecf0f1;
+      margin: 10px 0;
+      padding: 12px;
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+
+    .recursos li:hover {
+      transform: scale(1.02);
+      background: #d6eaf8;
+    }
+
+    .recursos a {
+      color: #2980b9;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    
+    .tabla {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .tabla thead {
+      background: #3498db;
+      color: white;
+    }
+
+    .tabla th, .tabla td {
+      padding: 12px;
+      text-align: left;
+    }
+
+    .tabla tbody tr:nth-child(even) {
+      background: #f2f2f2;
+    }
+
+    .tabla tbody tr:hover {
+      background: #d6eaf8;
+    }
+
+    
+    .volver a {
+      display: inline-block;
+      padding: 10px 18px;
+      background: #3498db;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .volver a:hover {
+      background: #2c80b4;
+    }
+
+  
+    .footer {
+      text-align: center;
+      padding: 15px;
+      background: #2c3e50;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<main>
+
+  <section class="card">
+    <h3> Recursos</h3>
+    <ul class="recursos">
+      <li><a href="#">Informe inicial (PDF)</a> – Documento que detalla el análisis preliminar y los objetivos del proyecto.</li>
+      <li><a href="#">Documentación técnica (Google Drive)</a> – Contiene especificaciones, diagramas y guías de desarrollo.</li>
+      <li><a href="#">Repositorio del código (GitHub)</a> – Acceso al código fuente y control de versiones del sistema.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h3> Equipo de Trabajo</h3>
+    <table class="tabla">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Rol</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lorena Araceli Suruguay</td>
+          <td>Líder de Proyecto – Responsable de la planificación, coordinación y supervisión general del desarrollo.</td>
+        </tr>
+        <tr>
+          <td>Camila Araceli Romero</td>
+          <td>Desarrollador Backend – Encargada de la lógica del sistema, base de datos y funcionamiento interno.</td>
+        </tr>
+        <tr>
+          <td>Lucia Valentina Madrigal</td>
+          <td>Diseñadora Frontend – Responsable de la interfaz visual y experiencia de usuario.</td>
+        </tr>
+        <tr>
+          <td>Yesica Arias</td>
+          <td>Analista de Requisitos – Encargada de relevar necesidades y definir funcionalidades del sistema.</td>
+        </tr>
+        <tr>
+          <td>Jesús Cabrera Garcia</td>
+          <td>Tester – Responsable de verificar el correcto funcionamiento y detectar errores.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <p class="volver">
+    <a href="proyectos.html">← Volver al listado</a>
+  </p>
+
+</main>
+
+<footer class="footer">
+  <p>Gestión de Proyectos Educativos &copy; 2026 | Plataforma orientada a la mejora del aprendizaje mediante tecnología</p>
+</footer>
 
 </body>
 </html>
