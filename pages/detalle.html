@@ -3,92 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <title>Detalle del Proyecto</title>
-
-  
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- Estilo interno -->
   <style>
     section.encabezado {
-      background-color: var(--color-fondo-seccion);
-      border-left: 4px solid var(--color-acento);
-      padding: 1rem 1.5rem;
+      background-color: #eaf3fb;
+      border-left: 4px solid #3498db;
+      padding: 1.5rem 2rem;
       margin-bottom: 1.5rem;
+      border-radius: 0 12px 12px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    section.encabezado:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    }
+
+    section.encabezado h2 {
+      color: var(--color-secundario);
+      font-size: 1.5rem;
+      margin-bottom: 0.8rem;
+      border-bottom: 2px solid var(--color-principal);
+      padding-bottom: 0.5rem;
+    }
+
+    section.encabezado p {
+      color: #555;
+      margin: 0.4rem 0;
     }
 
     article.descripcion {
-      padding: 1rem 1.5rem;
-      background-color: #f9f9f9;
-      border-radius: 6px;
+      background-color: #ffffff;
+      padding: 1.5rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      border-top: 4px solid var(--color-principal);
+      transition: 0.3s;
+      margin-bottom: 1.5rem;
+    }
+
+    article.descripcion:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
     }
 
     article.descripcion h3 {
-      color: var(--color-acento);
-      margin-bottom: 0.5rem;
-    }
-    
-    
-    
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Gestión de Proyectos Educativos</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="detalle.html">Detalle</a></li>
-        <li><a href="perfil.html">Mi Perfil</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-
-    <section class="encabezado">
-      <h2>Sistema de Seguimiento...</h2>
-      <p><strong>Fecha de inicio:</strong> 01 de marzo de 2026</p>
-      <p><strong>Autores:</strong> Lorena Araceli Suruguay, Lucia Valentina Madrigal, Camila Araceli Romero, Yesica Arias, Jesús Cabrera Garcia</p>
-    </section>
-
-    <article>
-  <h3>Descripción</h3>
-  <p>
-    Este proyecto tiene como objetivo principal desarrollar una herramienta digital innovadora
-    que permita a los docentes realizar un seguimiento detallado y continuo del proceso de aprendizaje
-    de cada alumno. A través de esta plataforma, se podrán registrar avances, detectar dificultades
-    y analizar el rendimiento académico de manera personalizada.
-  </p>
-  <p>
-    El sistema está diseñado para generar informes automáticos claros y precisos, facilitando la toma
-    de decisiones pedagógicas basadas en datos concretos. Esto permitirá a los docentes adaptar sus
-    estrategias de enseñanza y mejorar la calidad educativa.
-  </p>
-  <p>
-    En una segunda etapa, se incorporará un módulo inteligente de sugerencias para los alumnos,
-    el cual recomendará recursos educativos personalizados según las áreas en las que presenten
-    mayores dificultades, promoviendo así un aprendizaje autónomo y eficaz.
-  </p>
-</article>
-
-<style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f6f9;
-      margin: 0;
-      padding: 0;
-      color: #333;
+      color: var(--color-secundario);
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
     }
 
-    main {
-      width: 80%;
-      margin: 20px auto;
-      padding: 20px;
+    article.descripcion p {
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 0.8rem;
+      text-align: justify;
     }
 
-   
     .card {
       background: #ffffff;
       padding: 20px;
@@ -97,14 +71,12 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
-  
     h3 {
-      color: #2c3e50;
+      color: var(--color-secundario);
       border-left: 6px solid #3498db;
       padding-left: 10px;
     }
 
-   
     .recursos {
       list-style: none;
       padding: 0;
@@ -129,13 +101,12 @@
       text-decoration: none;
     }
 
-    
     .tabla {
       width: 100%;
       border-collapse: collapse;
       margin-top: 10px;
-      overflow: hidden;
       border-radius: 10px;
+      overflow: hidden;
     }
 
     .tabla thead {
@@ -156,7 +127,6 @@
       background: #d6eaf8;
     }
 
-    
     .volver a {
       display: inline-block;
       padding: 10px 18px;
@@ -167,78 +137,110 @@
       transition: 0.3s;
     }
 
-    .volver a:hover {
-      background: #2c80b4;
-    }
-
-  
-    .footer {
-      text-align: center;
-      padding: 15px;
-      background: #2c3e50;
-      color: white;
-      margin-top: 20px;
-    }
+    .volver a:hover { background: #2c80b4; }
+    .volver a:active { opacity: 0.7; }
+    .volver a:focus { outline: 2px solid var(--color-secundario); }
   </style>
-
 </head>
-
 <body>
 
-<main>
+  <header>
+    <h1>Gestión de Proyectos Educativos</h1>
+    <!-- Estilo en línea -->
+    <p style="color: rgba(255,255,255,0.85); margin-top: 5px;">Vista detallada del proyecto</p>
+  </header>
 
-  <section class="card">
-    <h3> Recursos</h3>
-    <ul class="recursos">
-      <li><a href="#">Informe inicial (PDF)</a> – Documento que detalla el análisis preliminar y los objetivos del proyecto.</li>
-      <li><a href="#">Documentación técnica (Google Drive)</a> – Contiene especificaciones, diagramas y guías de desarrollo.</li>
-      <li><a href="#">Repositorio del código (GitHub)</a> – Acceso al código fuente y control de versiones del sistema.</li>
-    </ul>
-  </section>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="proyectos.html">Proyectos</a>
+    <a href="detalle.html">Detalle</a>
+    <a href="perfil.html">Perfil</a>
+  </nav>
 
-  <section class="card">
-    <h3> Equipo de Trabajo</h3>
-    <table class="tabla">
-      <thead>
-        <tr>
-          <th>Nombre</th>
-          <th>Rol</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Lorena Araceli Suruguay</td>
-          <td>Líder de Proyecto – Responsable de la planificación, coordinación y supervisión general del desarrollo.</td>
-        </tr>
-        <tr>
-          <td>Camila Araceli Romero</td>
-          <td>Desarrollador Backend – Encargada de la lógica del sistema, base de datos y funcionamiento interno.</td>
-        </tr>
-        <tr>
-          <td>Lucia Valentina Madrigal</td>
-          <td>Diseñadora Frontend – Responsable de la interfaz visual y experiencia de usuario.</td>
-        </tr>
-        <tr>
-          <td>Yesica Arias</td>
-          <td>Analista de Requisitos – Encargada de relevar necesidades y definir funcionalidades del sistema.</td>
-        </tr>
-        <tr>
-          <td>Jesús Cabrera Garcia</td>
-          <td>Tester – Responsable de verificar el correcto funcionamiento y detectar errores.</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+  <main>
 
-  <p class="volver">
-    <a href="proyectos.html">← Volver al listado</a>
-  </p>
+    <!-- Encabezado de Proyecto -->
+    <section class="encabezado">
+      <h2>Sistema de Seguimiento de Aprendizaje Personalizado</h2>
+      <p><strong>Fecha de inicio:</strong> 01 de marzo de 2026</p>
+      <p><strong>Autores:</strong> Lorena Araceli Suruguay, Lucia Valentina Madrigal, Camila Araceli Romero, Yesica Arias, Jesús Cabrera Garcia</p>
+    </section>
 
-</main>
+    <!-- Descripción Extendida -->
+    <article class="descripcion">
+      <h3>Descripción</h3>
+      <p>
+        Este proyecto tiene como objetivo principal desarrollar una herramienta digital innovadora
+        que permita a los docentes realizar un seguimiento detallado y continuo del proceso de aprendizaje
+        de cada alumno. A través de esta plataforma, se podrán registrar avances, detectar dificultades
+        y analizar el rendimiento académico de manera personalizada.
+      </p>
+      <p>
+        El sistema está diseñado para generar informes automáticos claros y precisos, facilitando la toma
+        de decisiones pedagógicas basadas en datos concretos. Esto permitirá a los docentes adaptar sus
+        estrategias de enseñanza y mejorar la calidad educativa.
+      </p>
+      <p>
+        En una segunda etapa, se incorporará un módulo inteligente de sugerencias para los alumnos,
+        el cual recomendará recursos educativos personalizados según las áreas en las que presenten
+        mayores dificultades, promoviendo así un aprendizaje autónomo y eficaz.
+      </p>
+    </article>
 
-<footer class="footer">
-  <p>Gestión de Proyectos Educativos &copy; 2026 | Plataforma orientada a la mejora del aprendizaje mediante tecnología</p>
-</footer>
+    <!-- Recursos -->
+    <section class="card">
+      <h3>Recursos</h3>
+      <ul class="recursos">
+        <li><a href="#">Informe inicial (PDF)</a> – Documento que detalla el análisis preliminar y los objetivos del proyecto.</li>
+        <li><a href="#">Documentación técnica (Google Drive)</a> – Contiene especificaciones, diagramas y guías de desarrollo.</li>
+        <li><a href="#">Repositorio del código (GitHub)</a> – Acceso al código fuente y control de versiones del sistema.</li>
+      </ul>
+    </section>
+
+    <!-- Equipo de Trabajo -->
+    <section class="card">
+      <h3>Equipo de Trabajo</h3>
+      <table class="tabla">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Rol</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lorena Araceli Suruguay</td>
+            <td>Líder de Proyecto</td>
+          </tr>
+          <tr>
+            <td>Camila Araceli Romero</td>
+            <td>Desarrollador Backend</td>
+          </tr>
+          <tr>
+            <td>Lucia Valentina Madrigal</td>
+            <td>Diseñadora Frontend</td>
+          </tr>
+          <tr>
+            <td>Yesica Arias</td>
+            <td>Analista de Requisitos</td>
+          </tr>
+          <tr>
+            <td>Jesús Cabrera Garcia</td>
+            <td>Tester</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <p class="volver">
+      <a href="proyectos.html">← Volver al listado</a>
+    </p>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Plataforma Educativa</p>
+  </footer>
 
 </body>
 </html>
