@@ -5,7 +5,7 @@
   --color-fondo: #f4f6f8;
   --color-blanco: #ffffff;
 }
-
+ 
 /* GENERAL */
 body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -108,4 +108,207 @@ ul li {
 
 ul li:last-child {
   border-bottom: none;
+}
+
+/* ========================= */
+/* ESTILOS SOLO PROYECTOS */
+/* ========================= */
+
+.pagina-proyectos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.pagina-proyectos aside {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 10px;
+}
+
+.pagina-proyectos section {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.pagina-proyectos section h2 {
+    text-align: center;
+    width: 100%;
+}
+
+.pagina-proyectos article {
+    background-color: var(--color-blanco);
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+}
+
+.pagina-proyectos img {
+    max-width: 100%;
+}
+
+.pagina-proyectos a {
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+.pagina-proyectos a:hover {
+    color: red;
+}
+
+.pagina-proyectos a:active {
+    color: green;
+}
+
+.pagina-proyectos select:focus {
+    border: 2px solid var(--color-secundario);
+}
+  
+/* Contenedor principal */
+
+
+/* TARJETA PERFIL */
+.perfil {
+    background: white;
+    width: 320px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+/* Hover */
+.perfil:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagen */
+.perfil img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e67e22;
+    margin-bottom: 15px;
+}
+
+/* Nombre */
+.perfil h2 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+/* Rol */
+.perfil .rol {
+    color: #e67e22;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Texto */
+.perfil p {
+    margin: 5px 0;
+}
+
+/* Lista */
+.perfil ul {
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
+}
+
+.perfil ul li {
+    background: #f4f7f6;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 8px;
+}
+ footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+}
+/* Contenedor de todos los perfiles */
+.perfil-contenedor{
+  justify-content: center;
+  display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+} 
+
+/* ========================= */
+/* ESTILOS DETALLE           */
+/* ========================= */
+
+section.encabezado {
+  background-color: #eaf6ec;
+  border-left: 4px solid var(--color-principal);
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  border-radius: 0 12px 12px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+section.encabezado:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+section.encabezado h2 {
+  color: var(--color-secundario);
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--color-principal);
+  padding-bottom: 8px;
+}
+
+section.encabezado p {
+  color: #555;
+  margin: 5px 0;
+  font-weight: normal;
+}
+
+article.descripcion {
+  background-color: var(--color-blanco);
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-top: 4px solid var(--color-principal);
+  transition: 0.3s;
+  margin-bottom: 20px;
+  font-weight: normal;
+  text-align: left;
+}
+
+article.descripcion:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+article.descripcion h3 {
+  color: var(--color-secundario);
+  border-left: 5px solid var(--color-principal);
+  padding-left: 10px;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+article.descripcion p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  text-align: justify;
+  font-weight: normal;
 }

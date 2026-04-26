@@ -3,54 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <title>Detalle del Proyecto</title>
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 
   <header>
     <h1>Gestión de Proyectos Educativos</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="detalle.html">Detalle</a></li>
-        <li><a href="perfil.html">Mi Perfil</a></li>
-      </ul>
-    </nav>
+    <p style="color: rgba(255,255,255,0.85); margin-top: 5px;">Vista detallada del proyecto</p>
   </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="proyectos.html">Proyectos</a>
+    <a href="detalle.html">Detalle</a>
+    <a href="perfil.html">Perfil</a>
+  </nav>
 
   <main>
 
-    <section>
+    <!-- Encabezado de Proyecto -->
+    <section class="encabezado">
       <h2>Sistema de Seguimiento de Aprendizaje Personalizado</h2>
       <p><strong>Fecha de inicio:</strong> 01 de marzo de 2026</p>
       <p><strong>Autores:</strong> Lorena Araceli Suruguay, Lucia Valentina Madrigal, Camila Araceli Romero, Yesica Arias, Jesús Cabrera Garcia</p>
     </section>
 
-    <article>
+    <!-- Descripción Extendida -->
+    <article class="descripcion">
       <h3>Descripción</h3>
       <p>
-        Este proyecto tiene como objetivo desarrollar una herramienta digital que permita
-        a los docentes hacer un seguimiento del proceso de aprendizaje de cada alumno.
-        El sistema genera informes automáticos que facilitan la toma de decisiones pedagógicas.
+        Este proyecto tiene como objetivo principal desarrollar una herramienta digital innovadora
+        que permita a los docentes realizar un seguimiento detallado y continuo del proceso de aprendizaje
+        de cada alumno. A través de esta plataforma, se podrán registrar avances, detectar dificultades
+        y analizar el rendimiento académico de manera personalizada.
       </p>
       <p>
-        En una segunda etapa se incorporará un módulo de sugerencias para los alumnos,
-        recomendando recursos según las áreas donde presenten mayores dificultades.
+        El sistema está diseñado para generar informes automáticos claros y precisos, facilitando la toma
+        de decisiones pedagógicas basadas en datos concretos. Esto permitirá a los docentes adaptar sus
+        estrategias de enseñanza y mejorar la calidad educativa.
+      </p>
+      <p>
+        En una segunda etapa, se incorporará un módulo inteligente de sugerencias para los alumnos,
+        el cual recomendará recursos educativos personalizados según las áreas en las que presenten
+        mayores dificultades, promoviendo así un aprendizaje autónomo y eficaz.
       </p>
     </article>
 
-    <section>
+    <!-- Recursos -->
+    <section class="card">
       <h3>Recursos</h3>
-      <ul>
-        <li><a href="#">Informe inicial (PDF)</a></li>
-        <li><a href="#">Documentación técnica (Google Drive)</a></li>
-        <li><a href="#">Repositorio del código (GitHub)</a></li>
+      <ul class="recursos">
+        <li><a href="#">Informe inicial (PDF)</a> – Documento que detalla el análisis preliminar y los objetivos del proyecto.</li>
+        <li><a href="#">Documentación técnica (Google Drive)</a> – Contiene especificaciones, diagramas y guías de desarrollo.</li>
+        <li><a href="#">Repositorio del código (GitHub)</a> – Acceso al código fuente y control de versiones del sistema.</li>
       </ul>
     </section>
 
-    <section>
+    <!-- Equipo de Trabajo -->
+    <section class="card">
       <h3>Equipo de Trabajo</h3>
-      <table border="1">
+      <table class="tabla">
         <thead>
           <tr>
             <th>Nombre</th>
@@ -82,12 +94,14 @@
       </table>
     </section>
 
-    <p><a href="proyectos.html">← Volver al listado</a></p>
+    <p class="volver">
+      <a href="proyectos.html">← Volver al listado</a>
+    </p>
 
   </main>
 
   <footer>
-    <p>Gestión de Proyectos Educativos &copy; 2025</p>
+    <p>© 2026 Plataforma Educativa</p>
   </footer>
 
 </body>
